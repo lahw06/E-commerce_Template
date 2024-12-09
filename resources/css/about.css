@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    background-color: #f3ebea;
+    min-height: 100vh;
+    font-size: 20px;
+}
+
+
+.about-us-main .grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f3ebea;
+    
+}
+
+
+.about-us-main .grid-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.about-us-main .grid-row.reverse {
+    flex-direction: row-reverse;
+    background-color: #F5E1DA;
+}
+
+
+.about-us-main .text,
+.about-us-main .image {
+    flex: 1;
+    width: 50%;
+    padding: 0;
+}
+
+
+.about-us-main .text h2 {
+    font-size: 2em;
+    color: #966059;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-top: 60px;
+}
+
+.about-us-main .text p {
+    font-size: 1.05em;
+    margin-bottom: 15px;
+    line-height: 2;
+    padding-left: 40px;
+    padding-right: 120px;
+    padding-top: 40px;
+}
+
+.about-us-main .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    
+    
+        
+    .about-us-main .grid-container{
+        margin-top: 0px;
+    }
+    .about-us-main .grid-row,
+    .about-us-main .grid-row.reverse {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us-main .image,
+    .about-us-main .text {
+        width: 100%;
+    }
+
+    .about-us-main .text {
+        padding: 15px;
+        text-align: center;
+        padding-right:0px !important;
+        padding-left: 0px;
+    }
+
+    .about-us-main .text p {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        margin: 0 auto !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        font-size: 1em;
+    }
+    .about-us-main .text h2 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        margin: 0 auto !important;
+        max-width: 100% !important;
+        text-align: center !important;
+    }
+}

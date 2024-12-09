@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="description" />
+    <meta name="keywords" content="keywords" />
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/product.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="resources\images\favicon.jpg">
+
+</head>
+<body>
+    <header class="header">
+        <!-- Left Section: Menu -->
+        <div class="header_left">
+            <div class="menu-container">
+                <button class="menu" aria-label="Open Menu">
+                    <div class="menu-icon">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <span class="menu-text"></span>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="index">Home</a>
+                    <a href="about">About Us</a>
+                    <a href="product">Product</a>
+                    <a href="contactus">Contact Us</a>
+                    <a href="faqs">FAQs</a>
+                </div>
+            </div>
+        </div>
+        <div class="header_center">
+            <a href="index"><img id="logo" class="logo" loading="lazy"  alt="Logo" src="resources\images\favicon.jpg">
+                <h1>Business Name</h1></a>
+        </div>
+        <nav class="phonenav">
+            <ul>
+                <li><a href="product">Product</a></li>
+                <li><a href="aboutus">About Us</a></li>
+                <li><a href="contactus">Contact Us</a></li>
+                <li><a href="faqs">FAQs</a></li>
+            </ul>
+        </nav>
+       
+       
+    </header>
+    <main class="container">
+        <div class="image-box">
+            <img id="mainImage" src="resources/images/product.jpg" alt="Product Image">
+           
+        </div>
+
+        <div class="product">
+            <h1>Product</h1>
+            
+            <p>
+                Add a description of your product. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula, justo nec eleifend sodales, nisi risus vehicula metus, vitae placerat sapien ex nec libero. Curabitur id dui non lacus suscipit fermentum ut id lectus. Aenean convallis tincidunt mauris, at gravida nisi tristique sed. Proin in enim et sem suscipit congue ut non lorem. Integer in sollicitudin mi, non tincidunt lacus. Sed malesuada neque quis justo fringilla, id efficitur lacus tristique. Duis eget lacus non purus dictum pulvinar. Quisque varius risus quis fermentum eleifend. Vivamus tempor interdum libero, nec dapibus mi laoreet in.
+            </p>
+            
+            <div class="price">£X</div>
+
+            <button class="buy-now-button">Buy Now</button>
+
+
+        </div>
+    </main>
+
+    <div class="collapsible" onclick="toggleContent('description-content', 'toggle-icon-description')">
+        <div class="moveitmoveit">
+            <span>Extra Information</span>
+            <span id="toggle-icon-description">+</span>
+        </div>
+        <div id="description-content" class="collapsible-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <ul>
+                <li>Curabitur vel libero vel augue viverra placerat.</li>
+                <li>Phasellus in felis eget justo dapibus consequat.</li>
+                <li>Fusce auctor magna at neque facilisis ultricies.</li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="collapsible try" onclick="toggleContent('ingredients-content', 'toggle-icon-ingredients')">
+        <div class="moveitmoveit">
+            <span>Ingredients</span>
+            <span id="toggle-icon-ingredients">+</span>
+        </div>
+        <div id="ingredients-content" class="collapsible-content">
+            <p>
+                <a href="#" class="ingredient-link">Example</a>, 
+                <a href="#" class="ingredient-link">Example</a>, 
+                <a href="#" class="ingredient-link">Example</a>, 
+                <a href="#" class="ingredient-link">Example</a>, 
+                <a href="#" class="ingredient-link">Example</a>, 
+                <a href="#" class="ingredient-link">Example</a>, 
+                <a href="#" class="ingredient-link">Example</a>, 
+                <a href="#" class="ingredient-link">Example</a>.
+            </p>
+            
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-top">
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>
+                    This is an example of a small about us section designed to capture the attention of potential customers. Use this space to briefly highlight your journey, values, and commitment to excellence, helping to establish trust and encourage new clients to choose your services.
+                </p>
+                
+            </div>
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="product">Product</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="faqs">FAQs</a></li>
+                    <li><a href="contactus">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <h2>Contact Us</h2>
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                <p>Phone: <a href="tel:01234567890">01234 567 890</a></p>
+                <p>Address: 123 Business Street, Town, Country</p>
+                <p>Facebook: <a href="#">facebook.com/business</a></p>
+                <p>Instagram: <a href="#">@business</a></p>
+                <p>Twitter: <a href="#">@business</a></p>
+                <p>TikTok: <a href="#">@business</a></p>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>
+            Web design by <a href="#" style="font-weight: bold;">Lucy Hurley-Wareing</a>
+        </p>
+    </div>
+    <script src="resources/javascript/product.js"></script>
+</body>
+</html>
